@@ -1,0 +1,24 @@
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    height: 300px;
+    width: 300px;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    margin: 20px;
+    color: rgb(73, 73, 73);
+}
