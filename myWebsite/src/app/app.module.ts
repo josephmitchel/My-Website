@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
 
 // Page imports
 import { HomePage } from './pagehome/home.component';
@@ -17,6 +18,7 @@ import { ContactMePage } from './pagecontactme/contactme.component';
 // Component imports
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HomecardComponent } from './homecard/homecard.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     AboutMePage,
     ContactMePage,
     NavbarComponent,
+    HomecardComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+   MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

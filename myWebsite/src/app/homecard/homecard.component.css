@@ -1,0 +1,16 @@
+.card {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-image {
+    background-image: url('https://clipground.com/images/placeholder-clipart-5.jpg');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+  }
+
+  .description {
+    text-align: center;
+  }
