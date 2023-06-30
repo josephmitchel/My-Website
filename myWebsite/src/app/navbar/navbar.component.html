@@ -1,21 +1,40 @@
 <p>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <mat-toolbar color="primary"  class="navbar">
+        <div class="buttons">
+            <button classname="button" mat-button @fade @slidedown1>
+                <mat-icon>home</mat-icon>
+                Home
+            </button>
+    
+            <button classname="button" mat-button @fade @slidedown2>
+                <mat-icon>person</mat-icon>
+                About Me
+            </button>
+    
+            <button classname="button" mat-button @fade @slidedown3>
+                <mat-icon>email</mat-icon>
+                Contact Me
+            </button>
+        </div>
 
-    <mat-toolbar color="primary" class="nav">
-        <button classname="button" mat-button @fade @slidedown1>
-            <mat-icon>home</mat-icon>
-            Home
-        </button>
+        <span class="example-spacer"></span>
 
-        <button classname="button" mat-button @fade @slidedown2>
-            <mat-icon>person</mat-icon>
-            About Me
-        </button>
+        <div class="socials">
+            <button mat-icon-button>
+                <i class="fa-brands fa-instagram fa-lg" @fade @slidedown1></i>
+            </button>
 
-        <button classname="button" mat-button @fade @slidedown3>
-            <mat-icon>email</mat-icon>
-            Contact Me
-        </button>
+            <button mat-icon-button>
+                <i class="fa-brands fa-linkedin fa-lg" @fade @slidedown2></i>
+            </button>
+           
+            <button mat-icon-button>
+                <i class="fa-brands fa-github fa-lg" @fade @slidedown3></i>
+            </button>
+            
+        </div>
+        
     </mat-toolbar>
 </p>
-  

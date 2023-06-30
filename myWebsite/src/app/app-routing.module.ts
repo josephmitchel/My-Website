@@ -5,6 +5,7 @@ import { AboutMePage } from './pageaboutme/aboutme.component';
 import { ContactMePage } from './pagecontactme/contactme.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomePage },
   { path: 'aboutme', component: AboutMePage },
   { path: 'contactme', component: ContactMePage },
