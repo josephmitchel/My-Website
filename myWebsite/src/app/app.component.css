@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
+
+/* Navbar properties */
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.button {
+    font-size: 15px;
+    margin: 5px;
+}
+
+.socials {
+    display: flex;
+    column-gap: 5px;
+}
+
+
+/* Animation Properties */
 *{
     margin: 0px;
     padding: 0px;
@@ -26,6 +44,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .circles li{
@@ -87,8 +106,8 @@
 
 .circles li:nth-child(7){
     left: 35%;
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     animation-delay: 7s;
 }
 
@@ -110,8 +129,8 @@
 
 .circles li:nth-child(10){
     left: 85%;
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     animation-delay: 0s;
     animation-duration: 11s;
 }
@@ -132,6 +151,7 @@
         border-radius: 50%;
     }
 
+/* Html properties */
 }
 html, body { 
     height: 100%;

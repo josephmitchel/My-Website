@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./homecard.component.css']
 })
 export class HomecardComponent {
-
+  printToConsole(): void {
+    console.log('please work');
+  }
 }

@@ -16,22 +16,22 @@ export let slide = trigger('slide', [
 
 export let slidedown = trigger('slidedown1', [
     transition(':enter', [
-        style({ transform: 'translateX(-75px)' }),
-        animate(800)
+        style({ transform: 'translate(-75px, -75px)' }),
+        animate(500)
     ]),
 ])
 
 export let slidedown2 = trigger('slidedown2', [
     transition(':enter', [
-        style({ transform: 'translateX(-100px)' }),
-        animate(800)
+        style({ transform: 'translate(-100px, -100px)' }),
+        animate(750)
     ]),
 ])
 
 export let slidedown3 = trigger('slidedown3', [
     transition(':enter', [
-        style({ transform: 'translateX(-125px)' }),
-        animate(800)
+        style({ transform: 'translate(-125px, -125px)' }),
+        animate(1000)
     ]),
 ])
 

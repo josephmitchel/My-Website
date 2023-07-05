@@ -9,7 +9,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-import { MatDividerModule} from '@angular/material/divider';
 
 // Page imports
 import { HomePage } from './pagehome/home.component';
@@ -40,9 +39,11 @@ import { HomecardComponent } from './homecard/homecard.component';
     MatIconModule,
     MatListModule,
     MatCardModule,
-    MatDividerModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+}

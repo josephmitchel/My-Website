@@ -10,5 +10,5 @@ import { fade, slidedown, slidedown2, slidedown3 } from '../animations';
   ]
 })
 export class NavbarComponent {
-
+  // showFiller = false;
 }
