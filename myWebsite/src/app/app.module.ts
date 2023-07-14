@@ -19,7 +19,6 @@ import { ContactMePage } from './pagecontactme/contactme.component';
 // Component imports
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HomecardComponent } from './homecard/homecard.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +27,6 @@ import { HomecardComponent } from './homecard/homecard.component';
     EducationTab,
     ContactMePage,
     NavbarComponent,
-    HomecardComponent,
   ],
   imports: [
     BrowserModule,
