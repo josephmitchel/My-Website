@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePage } from './pagehome/home.component';
-import { AboutMePage } from './pageaboutme/aboutme.component';
+import { AboutMeTab } from './aboutme/aboutme.component';
+import { EducationTab } from './education/education.component';
 import { ContactMePage } from './pagecontactme/contactme.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomePage },
-  { path: 'aboutme', component: AboutMePage },
+  // { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: 'home', component: AboutMeTab },
+  { path: 'aboutme', component: EducationTab },
   { path: 'contactme', component: ContactMePage },
 ];
 

@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { fade, slide } from '../animations';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  selector: 'tab-aboutme',
+  templateUrl: './aboutme.component.html',
+  styleUrls: ['./aboutme.component.css'],
   
   animations: [
       fade, slide
     ]
 })
-export class HomePage {
+export class AboutMeTab {
 
 }

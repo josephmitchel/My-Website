@@ -1,25 +1,48 @@
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<mat-toolbar color="primary"  class="navbar">
+<!-- Header Navbar -->
+<mat-toolbar class="navbar"> 
   <span class="example-spacer"></span>
 
   <div class="socials">
-      <button mat-icon-button>
-          <i class="fa-brands fa-instagram fa-lg" @fade @slidedown1></i>
+      <button mat-icon-button class="icon">
+          <i class="fa-brands fa-instagram fa-xl" @fade @slidedown1></i>
       </button>
 
-      <button mat-icon-button>
-          <i class="fa-brands fa-linkedin fa-lg" @fade @slidedown2></i>
+      <button mat-icon-button class="icon">
+          <i class="fa-brands fa-linkedin fa-xl" @fade @slidedown2></i>
       </button>
-     
-      <button mat-icon-button>
-          <i class="fa-brands fa-github fa-lg" @fade @slidedown3></i>
+      
+      <button mat-icon-button class="icon">
+          <i class="fa-brands fa-github fa-xl" @fade @slidedown3></i>
       </button>
   </div> 
 </mat-toolbar>
 
+<mat-tab-group>
+    <!-- About Me Page -->
+    <mat-tab label="About Me">
+        <div class="aboutme">
+            <h1 class="header">Hi!</h1>
+            <tab-aboutme></tab-aboutme>
+        </div>
+        
+    </mat-tab>
+
+    <mat-tab label="Education">
+        <div class="education">
+            <tab-education></tab-education>
+        </div>
+
+    </mat-tab>
+
+    <mat-tab label="Experience">
+
+    </mat-tab>
+  </mat-tab-group>
+
+<!-- Background Animation -->
 <div class="area" >
     <ul class="circles">
             <li></li>
@@ -33,6 +56,15 @@
             <li></li>
             <li></li>
     </ul>
-</div >
+</div>
+
+<!-- Footer Navbar -->
+<div class="footer">
+    <div class="contact">
+        <div>Contact Me:</div>
+        <div>Email: josephpatmit@gmail.com</div>
+        <div>Cell: 202-308-2013</div>
+    </div>
+</div>
 
 <router-outlet></router-outlet>

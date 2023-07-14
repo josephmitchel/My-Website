@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-
 /* Navbar properties */
+.navbar {
+    background-color: #1E355E;
+    height: 75px;
+}
+
 .example-spacer {
     flex: 1 1 auto;
   }
@@ -16,6 +20,47 @@
     column-gap: 5px;
 }
 
+.icon {
+    color: white;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    margin: 20px;
+    color: rgb(73, 73, 73);
+}
+
+.footer {
+    height: 125px; 
+    position: fixed; 
+    bottom:0%;
+    width:100%; 
+    opacity: 1;
+    background: #1E355E;
+    display: flex;
+    align-items: center;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5%;
+    align-items: center;
+    /* border: 1px black solid; */
+}
+
+.contact {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 2%;
+    color: white;
+}
 
 /* Animation Properties */
 *{

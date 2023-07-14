@@ -9,10 +9,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatTabsModule } from '@angular/material/tabs';
 
 // Page imports
-import { HomePage } from './pagehome/home.component';
-import { AboutMePage } from './pageaboutme/aboutme.component';
+import { AboutMeTab } from './aboutme/aboutme.component';
+import { EducationTab } from './education/education.component';
 import { ContactMePage } from './pagecontactme/contactme.component';
 
 // Component imports
@@ -23,8 +24,8 @@ import { HomecardComponent } from './homecard/homecard.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomePage,
-    AboutMePage,
+    AboutMeTab,
+    EducationTab,
     ContactMePage,
     NavbarComponent,
     HomecardComponent,
@@ -39,6 +40,7 @@ import { HomecardComponent } from './homecard/homecard.component';
     MatIconModule,
     MatListModule,
     MatCardModule,
+    MatTabsModule
 
   ],
   providers: [],
