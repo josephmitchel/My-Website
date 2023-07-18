@@ -17,30 +17,32 @@
       <button mat-icon-button class="icon">
           <i class="fa-brands fa-github fa-xl" @fade @slidedown3></i>
       </button>
-  </div> 
+  </div>
 </mat-toolbar>
 
+<!-- Tabs  -->
 <mat-tab-group>
-    <!-- About Me Page -->
     <mat-tab label="About Me">
         <div class="aboutme">
             <h1 class="header">Hi!</h1>
-            <tab-aboutme></tab-aboutme>
+            <tab-aboutme></tab-aboutme> 
         </div>
-        
     </mat-tab>
 
     <mat-tab label="Education">
         <div class="education">
+            <h1 class="header">Education:</h1>
             <tab-education></tab-education>
         </div>
-
     </mat-tab>
 
     <mat-tab label="Experience">
-
+        <div class="experience">
+            <h1 class="header">Experience:</h1>
+            <tab-experience></tab-experience>
+        </div>
     </mat-tab>
-  </mat-tab-group>
+</mat-tab-group>
 
 <!-- Background Animation -->
 <div class="area" >

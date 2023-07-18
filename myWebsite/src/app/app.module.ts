@@ -14,19 +14,20 @@ import { MatTabsModule } from '@angular/material/tabs';
 // Page imports
 import { AboutMeTab } from './aboutme/aboutme.component';
 import { EducationTab } from './education/education.component';
-import { ContactMePage } from './pagecontactme/contactme.component';
+import { ExperienceTab } from './experience/experience.component';
 
 // Component imports
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeTab,
     EducationTab,
-    ContactMePage,
     NavbarComponent,
+    ExperienceTab,
   ],
   imports: [
     BrowserModule,

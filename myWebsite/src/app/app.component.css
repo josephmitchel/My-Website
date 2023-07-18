@@ -50,6 +50,23 @@
     margin: auto;
     margin-top: 5%;
     align-items: center;
+    overflow: hidden;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5%;
+    align-items: center;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5%;
+    align-items: center;
 }
 
 .contact {
@@ -64,8 +81,7 @@
 /* Animation Properties */
 *{
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px; 
 }
 
 .context {
