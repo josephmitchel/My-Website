@@ -34,4 +34,3 @@ export let slidedown3 = trigger('slidedown3', [
         animate(1000)
     ]),
 ])
-

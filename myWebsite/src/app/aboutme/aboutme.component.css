@@ -1,15 +1,24 @@
-/* .main {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-} */
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    color: rgb(73, 73, 73);
+    margin-bottom: 50px;
+  }
 
 .card {
     max-width: 400px;
     display: flex;
     align-items: center;
     border: 1px solid rgb(217, 217, 217);
+    background-color: rgb(253, 253, 253);
   }
   
   .header-image {
