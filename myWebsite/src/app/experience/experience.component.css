@@ -21,7 +21,7 @@
     gap: 6%;
 }
 
- .card {
+.card {
     width: 25%;
     height: 30%;
     border: 1px solid rgb(217, 217, 217);
@@ -32,3 +32,17 @@
     height: 80%;
     width: 100%;
 }
+
+.card-title {font-size: 1.3vw; margin-top: 1%}
+.card-subtitle {font-size: .9vw; margin-top: 1%}
+.card-content {font-size: .85vw; margin-top: 1%}
+
+.selected-card {
+    width: 25%;
+    height: 30%;
+    border: 1px solid rgb(217, 217, 217);
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
+    transform: translate3d(0,0,0);
+    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  }

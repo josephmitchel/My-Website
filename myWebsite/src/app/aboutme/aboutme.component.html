@@ -1,13 +1,14 @@
 <div class="main">
 
-    <h1 class="title">Hi!</h1>
+    <h1 class="title">About Me</h1>
 
-    <div class="cards">
-      <mat-card class="card">
+    <div  class="cards" [ngClass]="{'selected-card':titleSelected === 'title1'}">
+      <mat-card appMaterialElevation class="card">
         <mat-card-header>
           <div mat-card-avatar class="header-image"></div>
         </mat-card-header>
         <mat-card-content>
+          <h2 class="name">Hi!</h2>
           <p class="description">
             My name's Joseph Mitchell, but I usually go by Joe! I'm a software engineer with a passion for learning and creating. 
             I'm originally from Washington, DC but I currently live in Boston where I'm finishing up my senior year of undergrad.

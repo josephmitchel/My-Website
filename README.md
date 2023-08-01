@@ -8,3 +8,5 @@ to install on laptop:
 
 npm install -g @angular/cli
 ng add @angular/material
+
+https://stackblitz.com/edit/angular-material-elevation-hover-yxt5ph?file=src%2Fapp%2Fapp.component.css
