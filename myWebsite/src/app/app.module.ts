@@ -10,7 +10,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
-import { MaterialElevationDirective } from './material-elevation.directive';
 
 
 // Page imports
@@ -30,7 +29,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     EducationTab,
     NavbarComponent,
     ExperienceTab,
-    MaterialElevationDirective,
   ],
   imports: [
     BrowserModule,
