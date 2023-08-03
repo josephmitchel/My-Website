@@ -11,4 +11,5 @@
 .socials {
     display: flex;
     column-gap: 5px;
+    font-family: 'Roboto', sans-serif;
 }

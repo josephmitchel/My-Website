@@ -8,6 +8,11 @@ html, body {
     height:77vh;
     overflow: hidden;
 }
+
 body { 
-    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    margin: 0
+}
+
+* {
+    font-family: 'Noto Sans', sans-serif;
 }

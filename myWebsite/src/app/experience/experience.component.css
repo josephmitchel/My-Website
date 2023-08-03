@@ -11,7 +11,7 @@
     letter-spacing: 2.5px;
     color: rgb(73, 73, 73);
     margin-bottom: 50px; --c:linear-gradient(#919191 0 0); /* update the color here */
-    padding-bottom: .35em;
+    padding-bottom: .38em;
     background: var(--c), var(--c);
     background-size: .0em .0em;
     background-position:50% 100%;
@@ -19,11 +19,11 @@
     transition: .3s linear, background-size .3s .2s linear;
 }
 .title:hover {
-    background-size: 50% .1em;
+    background-size: 51% .1em;
     background-position: 0% 100%, 100% 100%;
 }
 
-.radio-btns {
+.cards {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,7 +31,7 @@
     gap: 6%;
 }
 
-.radio-btns__btn {
+.cards__card {
     width: 25%;
     height: 30%;
     border: 1px solid rgb(217, 217, 217);
@@ -39,25 +39,25 @@
     margin-bottom: 20px;
 }
 
-.radio-btns__btn:hover {
+.cards__card:hover {
     box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
     transform: translate3d(0,0,0);
     transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
 }
 
-.radio-btns:hover .radio-btns__btn:not(:hover) {
+.cards:hover .cards__card:not(:hover) {
     filter: grayscale(100%);
     opacity: 0.75;
 }
   
-.radio-btns:hover .radio-btns__btn:not(:hover)::after {
+.cards:hover .cards__card:not(:hover)::after {
     background-color: rgba(#000, 0.5);
 }
 
 .image {
     height: 80%;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 3));
+    
 }
 
 .card-title {font-size: 1.3vw; margin-top: 1%}
