@@ -6,7 +6,7 @@ import { EducationTab } from './education/education.component';
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: AboutMeTab },
-  { path: 'aboutme', component: EducationTab },
+  { path: 'education', component: EducationTab },
 ];
 
 @NgModule({

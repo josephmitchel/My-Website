@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 // Page imports
@@ -19,7 +20,6 @@ import { ExperienceTab } from './experience/experience.component';
 
 // Component imports
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -27,7 +27,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     AboutMeTab,
     EducationTab,
-    NavbarComponent,
     ExperienceTab,
   ],
   imports: [
@@ -41,6 +40,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatListModule,
     MatCardModule,
     MatTabsModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

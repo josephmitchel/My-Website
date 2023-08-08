@@ -1,16 +1,29 @@
-<div class="main" @fade>
+<div class="main">
 
-    <h1 class="title">About Me</h1>
+    <h1 class="title" 
+        [@fadeInOnEnter] 
+        [@pulse]="titleHover" 
+        (mouseenter)="titleHover = true"
+        (mouseleave)="titleHover = false">
+        About Me
+    </h1>
 
-    <div class="cards" >
-      <mat-card class="card" >
+    <div class="cards">
+      <mat-card class="card" 
+        [@pulseOnEnter]
+        [@pulse]="cardHover"
+        (mouseenter)="cardHover = true"
+        (mouseleave)="cardHover = false">
         <mat-card-header class="image">
           <div mat-card-avatar class="header-image"></div>
         </mat-card-header>
         <mat-card-content>
           <h2 class="name">Hi!</h2>
+
           <p class="description">
-            My name's Joseph Mitchell, but I usually go by Joe! I'm a software engineer with a passion for learning and creating. 
+            My name's Joseph Mitchell, but I usually go by Joe! 
+            <br>
+            I'm a software engineer with a passion for learning and creating. 
             I'm originally from Washington, DC but I currently live in Boston where I'm finishing up my senior year of undergrad.
             I'm looking for a full-time software engineering position where I can apply all of the knowledge I've gained over the years.
           </p>
@@ -19,12 +32,18 @@
             Some of my interests include web development, machine learning, and data science. 
             I also love writing my own music, practicing guitar, and playing tennis!
           </p>
-        </mat-card-content>
-      </mat-card>
-    </div>
 
-    
-      
+          <mat-expansion-panel class="panel">
+            <mat-expansion-panel-header>
+              <mat-panel-description>
+                Click For More Info!
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>I'm visible because I am open</p>
+          </mat-expansion-panel>
+        </mat-card-content>  
+      </mat-card>
+    </div>    
 </div>
 
 

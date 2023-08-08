@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { fade, slide } from '../animations';
+import { fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, pulseOnEnterAnimation, pulseAnimation, bounceAnimation } from 'angular-animations';
 
 @Component({
   selector: 'tab-aboutme',
@@ -7,19 +7,14 @@ import { fade, slide } from '../animations';
   styleUrls: ['./aboutme.component.css'],
   
   animations: [
-      fade, slide
+      fadeInOnEnterAnimation(), 
+      fadeOutOnLeaveAnimation(), 
+      pulseOnEnterAnimation(), 
+      pulseAnimation({ scale: 1.01, direction: '=>' }),
+      bounceAnimation(),
     ]
 })
 export class AboutMeTab {
-  defaultElevation = 2;
-  raisedElevation = 8;
-
-  titles = ['title1', 'title2', 'title3'];
-  titleSelected: any;
-
-  name = 'Angular';
-
-  select(title: any) {
-    this.titleSelected = title;
-  }
+  titleHover: boolean = false;
+  cardHover: boolean = false;
 }
