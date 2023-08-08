@@ -34,16 +34,19 @@
             I also love writing my own music, practicing guitar, and playing tennis!
           </p>
 
-          <mat-expansion-panel class="panel">
+          <mat-expansion-panel 
+            class="panel" 
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false">
             <mat-expansion-panel-header>
               <mat-panel-description>
-                Click For More Info!
+                {{panelOpenState ? 'Click To Hide!': 'Click For More Info!'}}
               </mat-panel-description>
             </mat-expansion-panel-header>
 
             <div class="buttons">
               <button mat-icon-button class="button"
-                [@shake]="educationHover"
+                [@heartBeat]="educationHover"
                 (mouseenter)="educationHover = true"
                 (mouseleave)="educationHover = false">
                 <i class="fa-solid fa-school fa-lg"></i>
@@ -51,7 +54,7 @@
               </button>
   
               <button mat-icon-button class="button"
-                [@shake]="experienceHover"
+                [@heartBeat]="experienceHover"
                 (mouseenter)="experienceHover = true"
                 (mouseleave)="experienceHover = false">
                 <i class="fa-solid fa-briefcase fa-lg"></i>
@@ -59,7 +62,7 @@
               </button>
   
               <button mat-icon-button class="button"
-                [@shake]="projectsHover"
+                [@heartBeat]="projectsHover"
                 (mouseenter)="projectsHover = true"
                 (mouseleave)="projectsHover = false">
                 <i class="fa-solid fa-diagram-project fa-lg"></i>

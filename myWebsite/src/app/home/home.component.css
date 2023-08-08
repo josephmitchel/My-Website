@@ -51,8 +51,6 @@
   background-image: url('./../../assets/Joe.jpeg');
   background-size: cover;
   background-position: center;
-  /* height: 20vh;  */
-  /* width: 20vh;  */
   height: 200px;
   width: 200px;
 }
@@ -98,7 +96,7 @@
   align-items: center;
   justify-content: center;
   gap: 22px;
-  margin-bottom: -15px;
+  margin-bottom: -13px;
 }
 
 .button-label {

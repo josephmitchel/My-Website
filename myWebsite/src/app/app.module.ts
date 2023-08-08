@@ -5,29 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-import { MatTabsModule } from '@angular/material/tabs';
-import {MatExpansionModule} from '@angular/material/expansion';
-
+import { MatExpansionModule } from '@angular/material/expansion';
 
 // Page imports
-import { AboutMeTab } from './aboutme/aboutme.component';
-import { EducationTab } from './education/education.component';
-import { ExperienceTab } from './experience/experience.component';
+import { HomeComponent } from './home/home.component';
+import { EducationComponent } from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 // Component imports
 import { AppComponent } from './app.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
-    AboutMeTab,
-    EducationTab,
-    ExperienceTab,
+    HomeComponent,
+    EducationComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,11 +30,8 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatSidenavModule,
     MatIconModule,
-    MatListModule,
     MatCardModule,
-    MatTabsModule,
     MatExpansionModule,
   ],
   providers: [],

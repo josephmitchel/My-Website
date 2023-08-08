@@ -45,8 +45,9 @@
   </div>
 </mat-toolbar>
 
-<div class="aboutme">
-    <tab-aboutme></tab-aboutme> 
+<div class="body">
+    <app-home *ngIf="displayHome()"></app-home>
+
 </div>
 
 <!-- Background Animation -->

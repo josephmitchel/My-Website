@@ -18,4 +18,12 @@ export class AppComponent {
   linkedinHover: boolean = false;
   githubHover: boolean = false;
   homeHover: boolean = false;
+
+  home: boolean = true;
+  displayHome(): boolean {
+    if (this.home) { return true } else { return false } }
+
+  education: boolean = false;
+  displayEducation(): boolean {
+    if (this.education) { return true } else { return false } }
 }

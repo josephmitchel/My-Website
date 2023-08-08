@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, pulseOnEnterAnimation, pulseAnimation, heartBeatOnEnterAnimation, shakeAnimation } from 'angular-animations';
+import { fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, pulseOnEnterAnimation, pulseAnimation, heartBeatOnEnterAnimation, heartBeatAnimation } from 'angular-animations';
 
 @Component({
-  selector: 'tab-aboutme',
-  templateUrl: './aboutme.component.html',
-  styleUrls: ['./aboutme.component.css'],
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css'],
   
   animations: [
       fadeInOnEnterAnimation(), 
@@ -12,10 +12,11 @@ import { fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, pulseOnEnterAnimation,
       pulseOnEnterAnimation(), 
       pulseAnimation({ scale: 1.01, direction: '=>' }),
       heartBeatOnEnterAnimation({ scale: 1.1 }),
-      shakeAnimation({ translate: '1px', direction: '=>' })
+      heartBeatAnimation({ scale: 1.05, direction: '=>' })
     ]
 })
-export class AboutMeTab {
+export class HomeComponent {
+  panelOpenState: boolean = false;
   titleHover: boolean = false;
   cardHover: boolean = false;
   educationHover: boolean = false;
