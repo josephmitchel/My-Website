@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { fade } from '../animations';
 
 @Component({
   selector: 'tab-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css'],
-  animations: [fade]
+  animations: []
 })
 export class ExperienceTab {
   defaultElevation = 0;

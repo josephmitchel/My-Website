@@ -1,24 +1,24 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Header Navbar -->
-<mat-toolbar class="navbar"> 
+<mat-toolbar class="navbar">
+    <!-- Home Button -->
     <button mat-icon-button class="icon"
         [@fadeInOnEnter] 
-        [@rubberBandOnEnter]="{ value: '', params: { duration: 1500, delay: 0}}"
+        [@rubberBandOnEnter]="{ value: '', params: { duration: 1500 }}"
         [@pulse]="homeHover"
         (mouseenter)="homeHover = true"
         (mouseleave)="homeHover = false">
         <i class="fa-solid fa-house fa-lg"></i>
     </button>
-    
 
-    <span class="example-spacer"></span>
+    <span class="spacer"></span>
 
+    <!-- Social Media Buttons -->
     <div class="socials">
         <button mat-icon-button class="icon"
             [@fadeInOnEnter] 
-            [@jelloOnEnter]="{ value: '', params: { duration: 1000, delay: 0}}"
+            [@jelloOnEnter]="{ value: '', params: { duration: 1000, delay: 0 }}"
             [@pulse]="instagramHover"
             (mouseenter)="instagramHover = true"
             (mouseleave)="instagramHover = false">
@@ -27,7 +27,7 @@
 
         <button mat-icon-button class="icon"
             [@fadeInOnEnter] 
-            [@jelloOnEnter]="{ value: '', params: { duration: 1000, delay: 200}}"
+            [@jelloOnEnter]="{ value: '', params: { duration: 1000, delay: 250 }}"
             [@pulse]="linkedinHover"
             (mouseenter)="linkedinHover = true"
             (mouseleave)="linkedinHover = false">
@@ -36,7 +36,7 @@
       
         <button mat-icon-button class="icon"
             [@fadeInOnEnter] 
-            [@jelloOnEnter]="{ value: '', params: { duration: 1000, delay: 400}}"
+            [@jelloOnEnter]="{ value: '', params: { duration: 1000, delay: 500 }}"
             [@pulse]="githubHover"
             (mouseenter)="githubHover = true"
             (mouseleave)="githubHover = false">
@@ -48,27 +48,6 @@
 <div class="aboutme">
     <tab-aboutme></tab-aboutme> 
 </div>
-
-<!-- Tabs  -->
-<!-- <mat-tab-group dynamicHeight>
-    <mat-tab label="About Me" class="tab">
-        <div class="aboutme">
-            <tab-aboutme></tab-aboutme> 
-        </div>
-    </mat-tab>
-
-    <mat-tab label="Education">
-        <div class="education">
-            <tab-education></tab-education>
-        </div>
-    </mat-tab>
-
-    <mat-tab label="Experience">
-        <div class="experience">
-            <tab-experience></tab-experience>
-        </div>
-    </mat-tab>
-</mat-tab-group> -->
 
 <!-- Background Animation -->
 <div class="area" >
@@ -85,14 +64,5 @@
             <li></li>
     </ul>
 </div>
-
-<!-- Footer Navbar -->
-<!-- <div class="footer">
-    <div class="contact">
-        <div>Contact Me:</div>
-        <div>Email: josephpatmit@gmail.com</div>
-        <div>Cell: 202-308-2013</div>
-    </div>
-</div> -->
 
 <router-outlet></router-outlet>

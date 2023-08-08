@@ -6,7 +6,7 @@
     height: 75px;
 }
 
-.example-spacer {
+.spacer {
     flex: 1 1 auto;
   }
 
@@ -24,47 +24,11 @@
     color: white;
 }
 
-.footer {
-    height: 125px; 
-    position: fixed; 
-    bottom:0%;
-    width:100%; 
-    opacity: 1;
-    background: #1E355E;
-    display: flex;
-    align-items: center;
-}
-
 .aboutme {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 7.5%;
+    margin-top: 8%;
     height: 80%;
-}
-
-.education {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 5%;
-    align-items: center;
-}
-
-.experience {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 5%;
-    align-items: center;
-}
-
-.contact {
-    float: left;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-left: 2%;
-    color: white;
 }
 
 /* Animation Properties */
