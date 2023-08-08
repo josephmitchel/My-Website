@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
-import { fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, pulseOnEnterAnimation, pulseAnimation, heartBeatOnEnterAnimation, heartBeatAnimation } from 'angular-animations';
+import { SharedService } from '../shared.service';
+import { 
+  fadeInOnEnterAnimation, 
+  fadeOutOnLeaveAnimation, 
+  pulseOnEnterAnimation, 
+  pulseAnimation, 
+  heartBeatOnEnterAnimation, 
+  heartBeatAnimation } from 'angular-animations';
 
 @Component({
   selector: 'app-home',
@@ -16,10 +23,16 @@ import { fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, pulseOnEnterAnimation,
     ]
 })
 export class HomeComponent {
+  constructor(private sharedService: SharedService) { }
+
   panelOpenState: boolean = false;
   titleHover: boolean = false;
   cardHover: boolean = false;
   educationHover: boolean = false;
   experienceHover: boolean = false;
   projectsHover: boolean = false;
+
+  // Methods for changing the display
+  changeDisplayToHome(): void {this.sharedService.changeDisplayToHome()}
+  changeDisplayToEducation(): void {this.sharedService.changeDisplayToEducation()}
 }

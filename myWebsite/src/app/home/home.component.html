@@ -1,5 +1,5 @@
 <div class="main">
-
+    <!-- Title Section -->
     <h1 class="title" 
         [@fadeInOnEnter]
         [@heartBeatOnEnter]
@@ -9,8 +9,10 @@
         About Me
     </h1>
 
+    <!-- Card Section -->
     <div class="cards">
       <mat-card class="card" 
+        [@fadeInOnEnter]
         [@pulseOnEnter]
         [@pulse]="cardHover"
         (mouseenter)="cardHover = true"
@@ -34,6 +36,7 @@
             I also love writing my own music, practicing guitar, and playing tennis!
           </p>
 
+          <!-- Expansion Panel in Card -->
           <mat-expansion-panel 
             class="panel" 
             (opened)="panelOpenState = true"
@@ -43,16 +46,19 @@
                 {{panelOpenState ? 'Click To Hide!': 'Click For More Info!'}}
               </mat-panel-description>
             </mat-expansion-panel-header>
-
+            
             <div class="buttons">
+              <!-- Education Button -->
               <button mat-icon-button class="button"
                 [@heartBeat]="educationHover"
                 (mouseenter)="educationHover = true"
-                (mouseleave)="educationHover = false">
+                (mouseleave)="educationHover = false"
+                (click)="changeDisplayToEducation()">
                 <i class="fa-solid fa-school fa-lg"></i>
                 <label class="button-label">Education</label>
               </button>
   
+              <!-- Experience Button -->
               <button mat-icon-button class="button"
                 [@heartBeat]="experienceHover"
                 (mouseenter)="experienceHover = true"
@@ -61,6 +67,7 @@
                 <label class="button-label">Experience</label>
               </button>
   
+              <!-- Projects Button -->
               <button mat-icon-button class="button"
                 [@heartBeat]="projectsHover"
                 (mouseenter)="projectsHover = true"

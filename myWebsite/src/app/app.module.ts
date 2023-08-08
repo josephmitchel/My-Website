@@ -9,13 +9,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 
-// Page imports
+// Component imports
+import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 
-// Component imports
-import { AppComponent } from './app.component';
+// Service imports
+
 
 @NgModule({
   declarations: [

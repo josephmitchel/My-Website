@@ -8,7 +8,8 @@
         [@rubberBandOnEnter]="{ value: '', params: { duration: 1500 }}"
         [@pulse]="homeHover"
         (mouseenter)="homeHover = true"
-        (mouseleave)="homeHover = false">
+        (mouseleave)="homeHover = false"
+        (click)="changeDisplayToHome()">
         <i class="fa-solid fa-house fa-lg"></i>
     </button>
 
@@ -45,9 +46,9 @@
   </div>
 </mat-toolbar>
 
-<div class="body">
+<div class="main">
     <app-home *ngIf="displayHome()"></app-home>
-
+    <app-education *ngIf="displayEducation()"></app-education>
 </div>
 
 <!-- Background Animation -->
