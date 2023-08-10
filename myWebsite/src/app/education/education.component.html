@@ -1,9 +1,9 @@
 <div class="main">
 
-    <h1 class="title">Education</h1>
+    <h1 class="title" [@heartBeatOnEnter] [@fadeInOnEnter]>Education</h1>
     
-    <div class="cards">
-        <mat-card class="cards__card" >
+    <!-- <div class="cards">
+        <mat-card class="cards__card" [@pulseOnEnter] [@fadeInOnEnter]>
             <img class="image" mat-card-md-image src="./../../assets/bostonuniversity2.jpg">
             <mat-card-header>
                 <mat-card-title-group>
@@ -16,7 +16,7 @@
             </mat-card-content>
         </mat-card>
     
-        <mat-card class="cards__card">
+        <mat-card class="cards__card" [@pulseOnEnter] [@fadeInOnEnter]>
             <img class="image" mat-card-md-image src="./../../assets/charleston1.jpg">
             <mat-card-header>
                 <mat-card-title-group>
@@ -29,7 +29,7 @@
             </mat-card-content>
         </mat-card>
     
-        <mat-card class="cards__card">
+        <mat-card class="cards__card" [@pulseOnEnter] [@fadeInOnEnter]>
             <img class="image" mat-card-md-image src="./../../assets/stjohns1.jpg">
             <mat-card-header>
                 <mat-card-title-group>
@@ -41,5 +41,20 @@
                 asdjupaotas opsitjastoiauypp aunostoa            
             </mat-card-content>
         </mat-card>
-    </div>
+    </div> -->
+    
+        <mat-list class="list">
+            <mat-list-item 
+                class="item"
+                *ngFor="let school of schools" 
+                    [@fadeInOnEnter]="{ value: '', params: { delay: school.delay }}"
+                    [@pulse]="school.hover"
+                    (mouseenter)="school.hover = true"
+                    (mouseleave)="school.hover = false">
+                    
+                    <mat-icon matListItemIcon>school</mat-icon>
+                    <div matListItemTitle class="item-title">{{ school.name }}</div>
+                    <div matListItemLine>{{ school.description }}</div>
+            </mat-list-item>
+        </mat-list>
 </div>

@@ -6,7 +6,8 @@ import {
   pulseOnEnterAnimation, 
   pulseAnimation, 
   heartBeatOnEnterAnimation, 
-  heartBeatAnimation } from 'angular-animations';
+  heartBeatAnimation,
+  slideOutRightOnLeaveAnimation } from 'angular-animations';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,9 @@ import {
       pulseOnEnterAnimation(), 
       pulseAnimation({ scale: 1.01, direction: '=>' }),
       heartBeatOnEnterAnimation({ scale: 1.1 }),
-      heartBeatAnimation({ scale: 1.05, direction: '=>' })
+      heartBeatAnimation({ scale: 1.05, direction: '=>' }),
+      slideOutRightOnLeaveAnimation(),
+
     ]
 })
 export class HomeComponent {

@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+
+// Service for sharing methods between components
 export class SharedService {
 
   // Display Home Methods
@@ -16,12 +18,20 @@ export class SharedService {
   set DisplayEducation(value: boolean) { this.displayEducation = value }
 
   changeDisplayToHome(): void {
-    this.DisplayHome = true;
     this.DisplayEducation = false;
+    
+    setTimeout(() => {
+      this.DisplayHome = true;
+      console.log("Delayed function executed!");
+    }, 200);
   }
 
   changeDisplayToEducation(): void {
     this.DisplayHome = false;
-    this.DisplayEducation = true;
+    
+    setTimeout(() => {
+      this.DisplayEducation = true;
+      console.log("Delayed function executed!");
+    }, 200);    
   }
 }

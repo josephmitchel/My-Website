@@ -4,7 +4,9 @@ import {
   fadeInOnEnterAnimation, 
   bounceInRightOnEnterAnimation, 
   jelloOnEnterAnimation, pulseAnimation, 
-  rubberBandOnEnterAnimation } from 'angular-animations';
+  rubberBandOnEnterAnimation,
+  fadeOutOnLeaveAnimation,
+  slideInLeftOnEnterAnimation } from 'angular-animations';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +17,10 @@ import {
     bounceInRightOnEnterAnimation(), 
     jelloOnEnterAnimation(), 
     rubberBandOnEnterAnimation(),
-    pulseAnimation({ scale: 1.25, direction: '=>'}) ]
+    pulseAnimation({ scale: 1.25, direction: '=>'}),
+    fadeOutOnLeaveAnimation({ duration: 200 }),
+    slideInLeftOnEnterAnimation({ duration: 1000 }),
+  ]
 })
 export class AppComponent {
   constructor(private sharedService: SharedService) { }

@@ -47,8 +47,14 @@
 </mat-toolbar>
 
 <div class="main">
-    <app-home *ngIf="displayHome()"></app-home>
-    <app-education *ngIf="displayEducation()"></app-education>
+    <app-home 
+        *ngIf="displayHome()" 
+        [@fadeOutOnLeave]>
+    </app-home>
+    <app-education 
+        *ngIf="displayEducation()"
+        [@fadeOutOnLeave]>
+    </app-education>
 </div>
 
 <!-- Background Animation -->
