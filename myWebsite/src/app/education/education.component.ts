@@ -8,9 +8,11 @@ import {
 
 export interface Format {
   name: string;
+  attendance: string;
   description: string;
   delay: number;
   hover: boolean;
+  image: string;
 }
 
 @Component({
@@ -26,6 +28,7 @@ export interface Format {
 })
 
 export class EducationComponent {
+  titleHover: boolean = false;
   buHover: boolean = false;
   cofcHover: boolean = false;
   sjcHover: boolean = false;
@@ -33,21 +36,27 @@ export class EducationComponent {
   schools: Format[] = [
     {
       name: 'Boston University',
-      description: '2021-2024',
+      attendance: '2021-2024',
+      description: 'Computer Science',
       delay: 150,
-      hover: this.buHover
+      hover: this.buHover,
+      image: './../../assets/bostonuniversity2.jpg'
     },
     {
       name: 'College of Charleston',
-      description: '2020-2021',
+      attendance: '2020-2021',
+      description: 'Computer Science',
       delay: 300,
-      hover: this.cofcHover
+      hover: this.cofcHover,
+      image: './../../assets/charleston1.jpg'
     },
     {
       name: 'St. John\'s College High School',
-      description: '2016-2020',
+      attendance: '2016-2020',
+      description: 'High School Diploma',
       delay: 450,
-      hover: this.sjcHover
+      hover: this.sjcHover,
+      image: './../../assets/stjohns1.jpg'
     },
   ];
 }

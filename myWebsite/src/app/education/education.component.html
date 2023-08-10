@@ -1,60 +1,29 @@
 <div class="main">
 
-    <h1 class="title" [@heartBeatOnEnter] [@fadeInOnEnter]>Education</h1>
-    
-    <!-- <div class="cards">
-        <mat-card class="cards__card" [@pulseOnEnter] [@fadeInOnEnter]>
-            <img class="image" mat-card-md-image src="./../../assets/bostonuniversity2.jpg">
-            <mat-card-header>
-                <mat-card-title-group>
-                <mat-card-title class="card-title">Boston University</mat-card-title>
-                <mat-card-subtitle class="card-subtitle">Boston, MA | 2021 - 2024</mat-card-subtitle>
-                </mat-card-title-group>
-            </mat-card-header>
-            <mat-card-content class="card-content">
-                asdjupaotas opsitjastoiauypp aunostoa
-            </mat-card-content>
-        </mat-card>
-    
-        <mat-card class="cards__card" [@pulseOnEnter] [@fadeInOnEnter]>
-            <img class="image" mat-card-md-image src="./../../assets/charleston1.jpg">
-            <mat-card-header>
-                <mat-card-title-group>
-                <mat-card-title class="card-title">College of Charleston</mat-card-title>
-                <mat-card-subtitle class="card-subtitle">Charleston, SC | 2020 - 2021</mat-card-subtitle>
-                </mat-card-title-group>
-            </mat-card-header>
-            <mat-card-content class="card-content">
-                asdjupaotas opsitjastoiauypp aunostoa
-            </mat-card-content>
-        </mat-card>
-    
-        <mat-card class="cards__card" [@pulseOnEnter] [@fadeInOnEnter]>
-            <img class="image" mat-card-md-image src="./../../assets/stjohns1.jpg">
-            <mat-card-header>
-                <mat-card-title-group>
-                <mat-card-title class="card-title">St. John's College High School</mat-card-title>
-                <mat-card-subtitle class="card-subtitle">Washington, DC | 2016 - 2020</mat-card-subtitle>
-                </mat-card-title-group>
-            </mat-card-header>
-            <mat-card-content class="card-content">
-                asdjupaotas opsitjastoiauypp aunostoa            
-            </mat-card-content>
-        </mat-card>
-    </div> -->
-    
-        <mat-list class="list">
-            <mat-list-item 
-                class="item"
-                *ngFor="let school of schools" 
-                    [@fadeInOnEnter]="{ value: '', params: { delay: school.delay }}"
-                    [@pulse]="school.hover"
-                    (mouseenter)="school.hover = true"
-                    (mouseleave)="school.hover = false">
-                    
-                    <mat-icon matListItemIcon>school</mat-icon>
-                    <div matListItemTitle class="item-title">{{ school.name }}</div>
-                    <div matListItemLine>{{ school.description }}</div>
-            </mat-list-item>
-        </mat-list>
+    <h1 class="title" 
+        [@fadeInOnEnter]
+        [@heartBeatOnEnter]
+        [@pulse]="titleHover" 
+        (mouseenter)="titleHover = true"
+        (mouseleave)="titleHover = false">
+        Education
+    </h1>
+
+    <div class="list" [@fadeInOnEnter]>
+        <div class="list_item"
+            *ngFor="let school of schools" 
+                [@fadeInOnEnter]="{ value: '', params: { delay: school.delay }}"
+                [@pulseOnEnter]="{ value: '', params: { delay: school.delay }}"
+                [@pulse]="school.hover"
+                (mouseenter)="school.hover = true"
+                (mouseleave)="school.hover = false">
+                
+                <img class="item-image" src="{{school.image}}">
+                <div class="item-text">
+                    <div class="item-title">{{ school.name }}</div>
+                    <div>{{ school.attendance }}</div>
+                    <p>{{ school.description }}</p>
+                </div>
+        </div>
+    </div>
 </div>

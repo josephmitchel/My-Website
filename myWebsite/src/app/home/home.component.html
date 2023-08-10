@@ -10,76 +10,74 @@
     </h1>
 
     <!-- Card Section -->
-    <div class="cards">
-      <mat-card class="card" 
-        [@fadeInOnEnter]
-        [@pulseOnEnter]
-        [@pulse]="cardHover"
-        (mouseenter)="cardHover = true"
-        (mouseleave)="cardHover = false">
-        <mat-card-header class="image">
-          <div mat-card-avatar class="header-image"></div>
-        </mat-card-header>
-        <mat-card-content>
-          <h2 class="name">Hi!</h2>
+    <mat-card class="card" 
+      [@fadeInOnEnter]
+      [@pulseOnEnter]
+      [@pulse]="cardHover"
+      (mouseenter)="cardHover = true"
+      (mouseleave)="cardHover = false">
+      <mat-card-header class="image">
+        <div mat-card-avatar class="header-image"></div>
+      </mat-card-header>
+      <mat-card-content>
+        <h2 class="name">Hi!</h2>
 
-          <p class="description">
-            My name's Joseph Mitchell, but I usually go by Joe! 
-            <br>
-            I'm a software engineer with a passion for learning and creating. 
-            I grew up in Washington, DC but I currently live in Boston where I'm finishing up my senior year of undergrad.
-            I'm looking for a full-time software engineering position where I can apply all of the knowledge I've gained over the years.
-          </p>
+        <p class="description">
+          My name's Joseph Mitchell, but I usually go by Joe! 
+          <br>
+          I'm a software engineer with a passion for learning and creating. 
+          I grew up in Washington, DC but I currently live in Boston where I'm finishing up my senior year of undergrad.
+          I'm looking for a full-time software engineering position where I can apply all of the knowledge I've gained over the years.
+        </p>
 
-          <p class="interests">
-            Some of my interests include web development, machine learning, and data science. 
-            I also love writing my own music, practicing guitar, and playing tennis!
-          </p>
+        <p class="interests">
+          Some of my interests include web development, machine learning, and data science. 
+          I also love writing my own music, practicing guitar, and playing tennis!
+        </p>
 
-          <!-- Expansion Panel in Card -->
-          <mat-expansion-panel 
-            class="panel" 
-            (opened)="panelOpenState = true"
-            (closed)="panelOpenState = false">
-            <mat-expansion-panel-header>
-              <mat-panel-description>
-                {{panelOpenState ? 'Click To Hide!': 'Click For More Info!'}}
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            
-            <div class="buttons">
-              <!-- Education Button -->
-              <button mat-icon-button class="button"
-                [@heartBeat]="educationHover"
-                (mouseenter)="educationHover = true"
-                (mouseleave)="educationHover = false"
-                (click)="changeDisplayToEducation()">
-                <i class="fa-solid fa-school fa-lg"></i>
-                <label class="button-label">Education</label>
-              </button>
-  
-              <!-- Experience Button -->
-              <button mat-icon-button class="button"
-                [@heartBeat]="experienceHover"
-                (mouseenter)="experienceHover = true"
-                (mouseleave)="experienceHover = false">
-                <i class="fa-solid fa-briefcase fa-lg"></i>
-                <label class="button-label">Experience</label>
-              </button>
-  
-              <!-- Projects Button -->
-              <button mat-icon-button class="button"
-                [@heartBeat]="projectsHover"
-                (mouseenter)="projectsHover = true"
-                (mouseleave)="projectsHover = false">
-                <i class="fa-solid fa-diagram-project fa-lg"></i>
-                <label class="button-label">Projects</label>
-              </button>
-            </div>
-          </mat-expansion-panel>
-        </mat-card-content>  
-      </mat-card>
-    </div>    
+        <!-- Expansion Panel in Card -->
+        <mat-expansion-panel 
+          class="panel" 
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-description>
+              {{panelOpenState ? 'Click To Hide!': 'Click For More Info!'}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          
+          <div class="buttons">
+            <!-- Education Button -->
+            <button mat-icon-button class="button"
+              [@heartBeat]="educationHover"
+              (mouseenter)="educationHover = true"
+              (mouseleave)="educationHover = false"
+              (click)="changeDisplayToEducation()">
+              <i class="fa-solid fa-school fa-lg"></i>
+              <label class="button-label">Education</label>
+            </button>
+
+            <!-- Experience Button -->
+            <button mat-icon-button class="button"
+              [@heartBeat]="experienceHover"
+              (mouseenter)="experienceHover = true"
+              (mouseleave)="experienceHover = false">
+              <i class="fa-solid fa-briefcase fa-lg"></i>
+              <label class="button-label">Experience</label>
+            </button>
+
+            <!-- Projects Button -->
+            <button mat-icon-button class="button"
+              [@heartBeat]="projectsHover"
+              (mouseenter)="projectsHover = true"
+              (mouseleave)="projectsHover = false">
+              <i class="fa-solid fa-diagram-project fa-lg"></i>
+              <label class="button-label">Projects</label>
+            </button>
+          </div>
+        </mat-expansion-panel>
+      </mat-card-content>  
+    </mat-card>   
 </div>
 
 
