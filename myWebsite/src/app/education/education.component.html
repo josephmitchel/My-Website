@@ -12,17 +12,17 @@
     <div class="list" [@fadeInOnEnter]>
         <div class="list_item"
             *ngFor="let school of schools" 
-                [@fadeInOnEnter]="{ value: '', params: { delay: school.delay }}"
-                [@pulseOnEnter]="{ value: '', params: { delay: school.delay }}"
+                [@fadeInOnEnter]="{value: '', params: {delay: school.delay}}"
+                [@pulseOnEnter]="{value: '', params: {delay: school.delay}}"
                 [@pulse]="school.hover"
                 (mouseenter)="school.hover = true"
                 (mouseleave)="school.hover = false">
                 
                 <img class="item-image" src="{{school.image}}">
                 <div class="item-text">
-                    <div class="item-title">{{ school.name }}</div>
-                    <div>{{ school.attendance }}</div>
-                    <p>{{ school.description }}</p>
+                    <div class="item-title">{{school.name}}</div>
+                    <div>{{school.attendance}}</div>
+                    <p>{{school.description}}</p>
                 </div>
         </div>
     </div>

@@ -25,6 +25,8 @@
 }
 
 .main {
+    position: relative;
+    z-index: 10;
     margin-left: auto;
     margin-right: auto;
     margin-top: 8%;
@@ -51,6 +53,7 @@
 
 .circles{
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;

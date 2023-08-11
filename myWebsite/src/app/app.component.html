@@ -48,11 +48,11 @@
 
 <div class="main">
     <app-home 
-        *ngIf="displayHome()" 
+        *ngIf="!displayHome()" 
         [@fadeOutOnLeave]>
     </app-home>
     <app-education 
-        *ngIf="displayEducation()"
+        *ngIf="!displayEducation()"
         [@fadeOutOnLeave]>
     </app-education>
 </div>

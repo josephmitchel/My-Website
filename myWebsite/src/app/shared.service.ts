@@ -34,4 +34,12 @@ export class SharedService {
       console.log("Delayed function executed!");
     }, 200);    
   }
+
+  displayManager(page: string): void {
+    if (page === 'Home') {
+      this.changeDisplayToHome();
+    } else if (page === 'Education') {
+      this.changeDisplayToEducation();
+    }
+  }
 }

@@ -9,6 +9,12 @@ import {
   heartBeatAnimation,
   slideOutRightOnLeaveAnimation } from 'angular-animations';
 
+export interface Format {
+  hover: boolean;
+  icon: string;
+  title: string;
+}
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -27,7 +33,6 @@ import {
 })
 export class HomeComponent {
   constructor(private sharedService: SharedService) { }
-
   panelOpenState: boolean = false;
   titleHover: boolean = false;
   cardHover: boolean = false;
@@ -35,7 +40,26 @@ export class HomeComponent {
   experienceHover: boolean = false;
   projectsHover: boolean = false;
 
+  buttons: Format[] = [
+    {
+      hover: this.educationHover,
+      icon: 'fa-solid fa-school fa-lg',
+      title: 'Education'
+    },
+    {
+      hover: this.experienceHover,
+      icon: 'fa-solid fa-briefcase fa-lg',
+      title: 'Experience'
+    },
+    {
+      hover: this.projectsHover,
+      icon: 'fa-solid fa-project-diagram fa-lg',
+      title: 'Projects'
+    }
+  ]
+
   // Methods for changing the display
-  changeDisplayToHome(): void {this.sharedService.changeDisplayToHome()}
-  changeDisplayToEducation(): void {this.sharedService.changeDisplayToEducation()}
+  changeDisplay(page: string): void {
+    this.sharedService.displayManager(page);
+  }
 }

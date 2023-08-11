@@ -45,35 +45,19 @@
               {{panelOpenState ? 'Click To Hide!': 'Click For More Info!'}}
             </mat-panel-description>
           </mat-expansion-panel-header>
-          
+
+          <!-- Display Navigation Buttons -->
           <div class="buttons">
-            <!-- Education Button -->
             <button mat-icon-button class="button"
-              [@heartBeat]="educationHover"
-              (mouseenter)="educationHover = true"
-              (mouseleave)="educationHover = false"
-              (click)="changeDisplayToEducation()">
-              <i class="fa-solid fa-school fa-lg"></i>
-              <label class="button-label">Education</label>
+              *ngFor="let button of buttons"
+                [@heartBeat]="button.hover"
+                (mouseenter)="button.hover = true"
+                (mouseleave)="button.hover = false"
+                (click)="changeDisplay(button.title)">
+                <i class="{{button.icon}}"></i>
+                <label class="button-label">{{button.title}}</label>
             </button>
-
-            <!-- Experience Button -->
-            <button mat-icon-button class="button"
-              [@heartBeat]="experienceHover"
-              (mouseenter)="experienceHover = true"
-              (mouseleave)="experienceHover = false">
-              <i class="fa-solid fa-briefcase fa-lg"></i>
-              <label class="button-label">Experience</label>
-            </button>
-
-            <!-- Projects Button -->
-            <button mat-icon-button class="button"
-              [@heartBeat]="projectsHover"
-              (mouseenter)="projectsHover = true"
-              (mouseleave)="projectsHover = false">
-              <i class="fa-solid fa-diagram-project fa-lg"></i>
-              <label class="button-label">Projects</label>
-            </button>
+                
           </div>
         </mat-expansion-panel>
       </mat-card-content>  
