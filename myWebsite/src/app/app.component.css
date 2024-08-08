@@ -69,6 +69,10 @@
     color: white;
 }
 
+.contactme {
+    font-weight: bold;
+}
+
 /* Animation Properties */
 *{
     margin: 0px;

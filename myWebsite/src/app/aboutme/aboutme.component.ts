@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { fade, slide } from '../animations';
+import { fade, fade2, fade3, slide } from '../animations';
 
 @Component({
   selector: 'tab-aboutme',
@@ -7,7 +7,7 @@ import { fade, slide } from '../animations';
   styleUrls: ['./aboutme.component.css'],
   
   animations: [
-      fade, slide
+      fade, fade2, fade3, slide
     ]
 })
 export class AboutMeTab {

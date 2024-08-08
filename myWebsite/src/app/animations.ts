@@ -7,6 +7,20 @@ export let fade = trigger('fade', [
     ])
 ])
 
+export let fade2 = trigger('fade2', [
+    transition('void => *', [
+        style({ opacity: 0 }),
+        animate(1200)
+    ])
+])
+
+export let fade3 = trigger('fade3', [
+    transition('void => *', [
+        style({ opacity: 0 }),
+        animate(1600)
+    ])
+])
+
 export let slide = trigger('slide', [
     transition(':enter', [
         style({ transform: 'translateX(-25px)' }),

@@ -1,27 +1,28 @@
-<div class="main" @fade>
+<div class="main" >
 
-    <h1 class="title">About Me</h1>
+    <h1 class="title" @fade>About Me</h1>
 
-    <div class="cards" >
-      <mat-card class="card" >
-        <mat-card-header class="image">
-          <div mat-card-avatar class="header-image"></div>
-        </mat-card-header>
-        <mat-card-content>
-          <h2 class="name">Hi!</h2>
-          <p class="description">
-            My name's Joseph Mitchell, but I usually go by Joe! I'm a software engineer with a passion for learning and creating. 
-            I'm originally from Washington, DC but I currently live in Boston where I'm finishing up my senior year of undergrad.
-            I'm looking for a full-time software engineering position where I can apply all of the knowledge I've gained over the years.
-          </p>
+    <div class="body">
 
-          <p class="interests">
-            Some of my interests include web development, machine learning, and data science. 
-            I also love writing my own music, practicing guitar, and playing tennis!
-          </p>
-        </mat-card-content>
-      </mat-card>
+      <div class="text" @fade2>
+        <h2 class="name">Hi!</h2>
+        <p class="description">
+          My name is Joseph Mitchell and I'm a Software Engineer based in New York City. 
+          I'm originally from Washington, DC and recently graduated from Boston University with a degree in Computer Science. 
+          Currently, I work at Matrix Applications LLC, a fintech leader in the fixed income capital markets, where I work on front-end development and data visualization.
+          
+        </p>
+        <p class="description">
+          Outside of work, I enjoy staying active through exercise as best as I can by working out, playing tennis, and indoor bouldering.
+          Additionally, I love practicing guitar, writing my own music, and playing video games.
+        </p>
+      </div>
+
+      <div class="images" @fade3>
+        <div mat-card-avatar class="header-image"></div>
+      </div>
     </div>
+    
 
     
       
