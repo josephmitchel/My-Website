@@ -1,45 +1,25 @@
 <div class="main">
 
-    <h1 class="title">Experience</h1>
-    
-    <div class="cards">
-        <mat-card class="cards__card" >
-            <img class="image" mat-card-md-image src="./../../assets/matrix1.jpg">
-            <mat-card-header>
-                <mat-card-title-group>
-                <mat-card-title class="card-title">Software Engineer Intern</mat-card-title>
-                <mat-card-subtitle class="card-subtitle">Matrix Applications LLC | New York, NY</mat-card-subtitle>
-                </mat-card-title-group>
-            </mat-card-header>
-            <mat-card-content class="card-content">
-                asdjupaotas opsitjastoiauypp aunostoa
-            </mat-card-content>
-        </mat-card>
-    
-        <mat-card class="cards__card">
-            <img class="image" mat-card-md-image src="./../../assets/questrom2.jpg">
-            <mat-card-header>
-                <mat-card-title-group>
-                <mat-card-title class="card-title">Telecommunications Assistant</mat-card-title>
-                <mat-card-subtitle class="card-subtitle">BU Student Philanthropy Center | Boston, MA</mat-card-subtitle>
-                </mat-card-title-group>
-            </mat-card-header>
-            <mat-card-content class="card-content">
-                asdjupaotas opsitjastoiauypp aunostoa
-            </mat-card-content>
-        </mat-card>
-    
-        <mat-card class="cards__card">
-            <img class="image" mat-card-md-image src="./../../assets/tennistar3.jpg">
-            <mat-card-header>
-                <mat-card-title-group>
-                <mat-card-title class="card-title">Office Assistant</mat-card-title>
-                <mat-card-subtitle class="card-subtitle">TenniStar | Bethesda, MD</mat-card-subtitle>
-                </mat-card-title-group>
-            </mat-card-header>
-            <mat-card-content class="card-content">
-                asdjupaotas opsitjastoiauypp aunostoa            
-            </mat-card-content>
-        </mat-card>
+    <h1 class="title" @fade>Experience</h1>
+
+    <div class="body" @fade2>
+        <div class="text">
+            <h2 class="name">Matrix Applications LLC</h2>
+                <p class="description">
+                    Test description
+                </p>
+            <h2 class="name">BU Student Philanthropy Center</h2>
+                <p class="description">
+                    Test description
+                </p>
+            <h2 class="name">TenniStar</h2>
+                <p class="description">
+                    Test description
+                </p>
+        </div>
+
+        <!-- <div class="images" @fade3>
+            <div mat-card-avatar class="header-image"></div>
+        </div> -->
     </div>
 </div>
