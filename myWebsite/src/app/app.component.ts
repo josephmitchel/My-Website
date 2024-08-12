@@ -10,4 +10,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'myWebsite';
   showFiller = false;
+
+  selectedTab: string = 'aboutme'; // Default tab
+
+  selectTab(tab: string) {
+    this.selectedTab = tab;
+  }
 }

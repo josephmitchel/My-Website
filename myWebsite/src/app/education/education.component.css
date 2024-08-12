@@ -1,7 +1,9 @@
 .main {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .title {
@@ -11,58 +13,34 @@
     letter-spacing: 2.5px;
     color: rgb(73, 73, 73);
     margin-bottom: 50px; 
-    --c:linear-gradient(#919191 0 0); /* update the color here */
+    --c:linear-gradient(#919191 0 0);
     padding-bottom: .38em;
     background: var(--c), var(--c);
-    background-size: .0em .0em;
-    background-position:50% 100%;
+    background-size: 51% .1em;
+    background-position: 0% 100%, 100% 100%;
     background-repeat: no-repeat;
     transition: .3s linear, background-size .3s .2s linear;
 }
-.title:hover {
-    background-size: 51% .1em;
-    background-position: 0% 100%, 100% 100%;
-}
 
-.cards {
+.body {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 6%;
-}
-
-.cards__card {
-    width: 25%;
-    height: 30%;
-    border: 1px solid rgb(217, 217, 217);
-    background-color: rgb(253, 253, 253);
-    margin-bottom: 20px;
-}
-
-.cards__card:hover {
-    box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
-    transform: translate3d(0,0,0);
-    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
-}
-
-.cards:hover .cards__card:not(:hover) {
-    filter: grayscale(100%);
-    opacity: 0.75;
+    align-items: left;
+    width: 100%;
 }
   
-.cards:hover .cards__card:not(:hover)::after {
-    background-color: rgba(#000, 0.5);
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 70%;
 }
 
-.image {
-    height: 80%;
-    width: 100%;
-    
+.school-name {
+    text-align: left;
+    font-size: 3vw; 
+    margin-top: 1%;
+    margin-left: 5%;
 }
-
-.card-title {font-size: 1.3vw; margin-top: 1%}
-.card-subtitle {font-size: .9vw; margin-top: 1%}
-.card-content {font-size: .85vw; margin-top: 1%}
 
  

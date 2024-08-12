@@ -1,71 +1,90 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-<!-- Header Navbar -->
-<mat-toolbar class="navbar"> 
-  <span class="example-spacer"></span>
-
-  <div class="socials">
-      <button mat-icon-button class="icon">
-          <i class="fa-brands fa-instagram fa-xl" @fade @slidedown1></i>
-      </button>
-
-      <button mat-icon-button class="icon">
-          <i class="fa-brands fa-linkedin fa-xl" @fade @slidedown2></i>
-      </button>
-      
-      <button mat-icon-button class="icon">
-          <i class="fa-brands fa-github fa-xl" @fade @slidedown3></i>
-      </button>
-  </div>
-</mat-toolbar>
-
-<!-- Tabs  -->
-<mat-tab-group dynamicHeight>
-    <mat-tab label="About Me" class="tab">
-        <div class="aboutme">
+<div class="main">
+    <!-- Header Navbar -->
+    <mat-toolbar class="navbar"> 
+        <span class="example-spacer"></span>
+    
+        <div class="socials">
+            <button mat-icon-button class="icon">
+                <i class="fa-brands fa-instagram fa-xl" @fade @slidedown1></i>
+            </button>
+    
+            <button mat-icon-button class="icon">
+                <i class="fa-brands fa-linkedin fa-xl" @fade @slidedown2></i>
+            </button>
+            
+            <button mat-icon-button class="icon">
+                <i class="fa-brands fa-github fa-xl" @fade @slidedown3></i>
+            </button>
+        </div>
+    </mat-toolbar>
+    
+    <!-- Tabs  -->
+    <!-- <mat-tab-group dynamicHeight animationDuration="0ms">
+        <mat-tab label="About Me" class="tab">
+            <div class="aboutme">
+                <tab-aboutme></tab-aboutme> 
+            </div>
+        </mat-tab>
+    
+        <mat-tab label="Education">
+            <div class="education">
+                <tab-education></tab-education>
+            </div>
+        </mat-tab>
+    
+        <mat-tab label="Experience">
+            <div class="experience">
+                <tab-experience></tab-experience>
+            </div>
+        </mat-tab>
+    </mat-tab-group> -->
+    <div class="main-content">
+        <div class="sidenav">
+            <input type="button" value="About Me" class="tablinks"  (click)="selectTab('aboutme')">
+            <input type="button" value="Experience" class="tablinks" (click)="selectTab('experience')">
+            <input type="button" value="Projects" class="tablinks" (click)="selectTab('education')">
+        </div>
+    
+        <div class="content" *ngIf="selectedTab === 'aboutme'">
             <tab-aboutme></tab-aboutme> 
         </div>
-    </mat-tab>
-
-    <mat-tab label="Education">
-        <div class="education">
-            <!-- <h1 class="header">Education:</h1> -->
-            <tab-education></tab-education>
-        </div>
-    </mat-tab>
-
-    <mat-tab label="Experience">
-        <div class="experience">
-            <!-- <h1 class="header">Experience:</h1> -->
+        <div class="content" *ngIf="selectedTab === 'experience'">
             <tab-experience></tab-experience>
         </div>
-    </mat-tab>
-</mat-tab-group>
-
-<!-- Background Animation -->
-<div class="area" >
-    <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-    </ul>
-</div>
-
-<!-- Footer Navbar -->
-<div class="footer">
-    <div class="contact">
-        <div class="contactme">Contact Me:</div>
-        <div>Email: josephpatmit@gmail.com</div>
-        <div>Cell: 202-308-2013</div>
+        <div class="content" *ngIf="selectedTab === 'projects'">
+            <tab-education></tab-education>
+        </div>
+    </div>
+    
+    <!-- Background Animation -->
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div>
+    
+    <!-- Footer Navbar -->
+    <div class="footer">
+        <div class="contact">
+            <div class="contactme">Contact Me:</div>
+            <div class="info">Email: josephpatmit@gmail.com</div>
+            <div class="info">Cell: 202-308-2013</div>
+        </div>
     </div>
 </div>
+
 
 <router-outlet></router-outlet>

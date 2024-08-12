@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
+.main {
+    font-family: 'Poppins', sans-serif; /* Apply the Poppins font */
+}
+
 /* Navbar properties */
 .navbar {
     background-color: #1E355E;
@@ -35,11 +39,51 @@
     align-items: center;
 }
 
-.aboutme {
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidenav {
+    /* border: 1px solid #1E355E; */
+    height: 100vw;
+    width: 180px;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    background: #f7f7f7;
+}
+
+.tablinks {
+    height: 70px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif; /* Apply the Poppins font */
+    font-size: 1.1em;
+    font-weight: 200;
+    color: rgb(59, 59, 59);
+    background: #f7f7f7;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s, box-shadow 0.3s; /* Include background in transition */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.tablinks:hover {
+    background: #aaaaaa;
+    /* box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);} */
+}
+
+.tablinks:active {
+    background: #8d8d8d;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.content {
+    /* border: 1px solid #1E355E; */
+    width: 88vw;
+    display: flex;
+    flex-direction: column;
     margin-top: 5%;
+    margin-left: 2%;
     align-items: center;
     
 }
@@ -71,7 +115,14 @@
 
 .contactme {
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
+
+.info {
+    font-family: 'Poppins', sans-serif;
+}
+
+
 
 /* Animation Properties */
 *{
@@ -211,4 +262,4 @@
 html, body { 
     height: 100%;
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  }
+body { margin: 0; font-family: 'Poppins', sans-serif; }
