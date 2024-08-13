@@ -30,7 +30,7 @@
 
 .sidenav {
     height: 100vw;
-    width: 180px;
+    width: 160px;
     display: flex;
     flex-direction: column;
     background: #f7f7f7;
@@ -43,7 +43,7 @@
 
 .tablinks {
     height: 70px;
-    width: 180px;
+    width: 160px;
     font-family: 'Poppins', sans-serif; /* Apply the Poppins font */
     font-size: 1.1em;
     font-weight: 200;
@@ -52,6 +52,10 @@
     border: none;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s, box-shadow 0.3s; /* Include background in transition */
+}
+
+.tablinks.active {
+    background: #dadada; /* Different shade of grey for the active tab */
 }
 
 .tablinks:hover {

@@ -25,9 +25,15 @@
     <!-- Main Content -->
     <div class="main-content">
         <div class="sidenav">
-            <input type="button" value="About Me" class="tablinks"  (click)="selectTab('aboutme')">
-            <input type="button" value="Experience" class="tablinks" (click)="selectTab('experience')">
-            <input type="button" value="Projects" class="tablinks" (click)="selectTab('education')">
+            <input type="button" value="About Me" class="tablinks" 
+                   [ngClass]="{'active': selectedTab === 'aboutme'}" 
+                   (click)="selectTab('aboutme')">
+            <input type="button" value="Experience" class="tablinks" 
+                   [ngClass]="{'active': selectedTab === 'experience'}" 
+                   (click)="selectTab('experience')">
+            <input type="button" value="Projects" class="tablinks" 
+                   [ngClass]="{'active': selectedTab === 'projects'}" 
+                   (click)="selectTab('projects')">
         </div>
     
         <div class="content" *ngIf="selectedTab === 'aboutme'">
@@ -37,7 +43,7 @@
             <tab-experience></tab-experience>
         </div>
         <div class="content" *ngIf="selectedTab === 'projects'">
-            <tab-education></tab-education>
+            <tab-projects></tab-projects>
         </div>
     </div>
     

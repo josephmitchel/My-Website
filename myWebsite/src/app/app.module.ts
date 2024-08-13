@@ -11,23 +11,20 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 
-
 // Page imports
 import { AboutMeTab } from './aboutme/aboutme.component';
-import { EducationTab } from './education/education.component';
+import { ProjectsTab } from './projects/projects.component';
 import { ExperienceTab } from './experience/experience.component';
 
 // Component imports
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeTab,
-    EducationTab,
-    NavbarComponent,
+    ProjectsTab,
     ExperienceTab,
   ],
   imports: [

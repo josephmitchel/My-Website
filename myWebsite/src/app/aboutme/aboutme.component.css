@@ -30,18 +30,19 @@
   width: 15em;
   height: 15em;
   margin-left: 15%;
+  border-radius: 50%;
 }
 
 .body {
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 85%;
 }
 
 .text {
   display: flex;
   flex-direction: column;
-  width: 80%;
 }
 
 .images {
